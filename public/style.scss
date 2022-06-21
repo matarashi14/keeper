@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #fdf1d0;
+  --color-secondary: #f5ba13;
+  --color-white: #fef8e7;
+  --color-black: #181302;
+  --color-gray-1: #d6d6d6;
+  --color-gray-2: #adadad;
+  --color-gray-3: #858585;
+  --color-gray-4: #5c5c5c;
+  --color-gray-5: #333333;
+  --color-gray-6: #2e2e2e;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fdf1d0;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  color: var(--color-black);
+  padding: 0 1.6rem;
+  font-size: 1.6rem;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  background-color: var(--color-secondary);
+  margin: auto -1.6rem;
+  padding: 1.6rem 3.2rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  h1 {
+    color: var(--color-white);
+    font-family: "McLaren", cursive;
+    font-weight: 700;
+    font-size: 2.8rem;
+  }
+}
+
+.createNote {
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  margin: 2rem auto;
+  padding: 1.6rem 1rem 1rem;
+  position: relative;
+  box-shadow: 0 2px 5px var(--color-gray-2);
+  border-radius: 7px;
+
+  input {
+    width: 100%;
+    border: none;
+    height: 2rem;
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  textarea {
+    width: 100%;
+    border: none;
+    font-family: inherit;
+    background-color: var(--color-white);
+  }
+
+  textarea:focus {
+    outline: none;
+  }
+
+  button {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border: none;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 2rem;
+    bottom: -1.3rem;
+  }
+}
+
+.note {
+  background: var(--color-white);
+  border-radius: 7px;
+  box-shadow: 0 2px 5px var(--color-gray-2);
+  padding: 1rem;
+  width: 20rem;
+  margin: 1.6rem;
+  float: left;
+  position: relative;
+  h1 {
+    font-size: inherit;
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 1rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  button {
+    border: none;
+    background-color: var(--color-secondary);
+    color: var(--color-white) !important;
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 50%;
+    padding: 0.6rem;
+    position: absolute;
+    right: 2rem;
+    bottom: -1.3rem;
+  }
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  margin-bottom: 1rem;
+  width: 100%;
+  //   height: 2.5rem;
+  p {
+    color: var(--color-gray-3);
+    font-size: 1.2rem;
+  }
+}
