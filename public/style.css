@@ -57,7 +57,7 @@ header h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 40rem;
+  width: 30%;
   margin: 2rem auto;
   padding: 1.6rem 1rem 1rem;
   position: relative;
@@ -148,5 +148,17 @@ footer {
 footer p {
   color: var(--color-gray-3);
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 42em) {
+  .createNote {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 26em) {
+  .createNote {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
